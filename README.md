@@ -1,56 +1,83 @@
-# Welcome to your Expo app 👋
+# 💰 Expense Tracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application for tracking personal expenses, built from scratch directly on Android.
 
-## Get started
+This project is part of a YouTube series demonstrating how to develop a mobile application using only an Android device, without a computer or a backend.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## About
 
-2. Start the app
+**Expense Tracker** is a personal finance application designed to help users record, organize, and monitor their expenses.
 
-   ```bash
-   npx expo start
-   ```
+The application is being developed step by step, from the initial project setup to the implementation of its core features.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **[React Native](https://reactnative.dev/)** — Mobile application development
+- **[Expo](https://expo.dev/)** — Development and application tooling
+- **[TypeScript](https://www.typescriptlang.org/)** — Type-safe JavaScript
+- **[Yarn](https://yarnpkg.com/)** — Package management
+- **[Neovim](https://neovim.io/)** — Code editor
+- **[Termux](https://termux.dev/)** — Android terminal environment
+- **[Node.js](https://nodejs.org/)** — JavaScript runtime
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Development
+
+The entire development process takes place directly on an Android device using Termux and Neovim.
+
+The project is built incrementally, with each stage introducing new functionality as the application evolves.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- An Android device
+- [Termux](https://termux.dev/)
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Neovim](https://neovim.io/)
+- [Expo Go](https://expo.dev/go)
+
+### Installation
+
+Clone the repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/Justino-code/expense-tracker.git
+cd expense-tracker
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Install the dependencies:
 
-### Other setup steps
+```bash
+yarn install
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Start the development server:
 
-## Learn more
+```bash
+yarn start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Follow the Expo instructions to open the application in Expo Go.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## Project Status
 
-Join our community of developers creating universal apps.
+🚧 **In development**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Features and documentation will be added as the project progresses.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
