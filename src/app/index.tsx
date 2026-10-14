@@ -7,14 +7,28 @@ import { Text, View, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { COLORS, SPACING } from "../constants/theme";
+import { ExpenseCard } from '../components/ExpenseCard';
+import { Expense } from '../types';
+
+const date = new Date().toISOString();
+
+const MOCK: Expense = {
+  id: 'demo',
+  amount: 24.9,
+  category: 'food',
+  note: 'Lunch',
+  date: date,
+  createAt: date,
+  updateAt: date,
+
+};
 
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
       <View style={styles.content}>
-        <Text style={styles.emoji}>mony</Text>
         <Text style={styles.title}>Expense Tracker</Text>
-        <Text style={styles.subtitle}>No expense yet</Text>
+        <ExpenseCard expense={MOCK} />
       </View>
     </SafeAreaView>
 
@@ -22,22 +36,12 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    paddingHorizontal: SPACING.lg,
-    gap: SPACING.sm,
-  },
-
-  emoji: { fontSize: 72, marginBottom: SPACING.sm },
+  container: { flex: 1, backgroundColor: COLORS.bg },
+  content: { flex: 1, padding: SPACING.lg, gap: SPACING.md },
 
   title: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: 'bold',
     color: COLORS.text,
-    letterSpacing: -0.5,
   },
-
-  subtitle: { fontSize: 15, color: COLORS.textMuted, textAlign: 'center' },
 });
